@@ -30,7 +30,7 @@ def sauvegarde_gtfs_rt():
     excel_path = os.path.join(ARCHIVE_DIR, excel_filename)
 
     try:
-        response = requests.get(GTFS_RT_SA_URL, timeout=30)
+        response = requests.get(GTFS_RT_SA_URL, timeout=60)
         response.raise_for_status()
 
         # ==========================
